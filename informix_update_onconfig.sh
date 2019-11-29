@@ -52,7 +52,7 @@ do
    cnt=`sed -n "/^${line}/p" $INFORMIXDIR/etc/$ONCONFIG |wc -l`
       if [[ $cnt == "0" ]]
       then
-         echo $line >> $$INFORMIXDIR/etc/$ONCONFIG
+         echo $line >> $INFORMIXDIR/etc/$ONCONFIG
       fi
    fi
 
