@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:buster
 #FROM debian:stretch
 
 MAINTAINER darin.tracy@hcl.com 
@@ -17,6 +17,7 @@ RUN apt-get -y install vim
 RUN apt-get -y install sudo
 RUN apt-get -y install curl
 RUN apt-get -y install jq 
+RUN apt-get -y install procps
 
 
 #RUN apt-get install -y openjdk-7-jre 
